@@ -1,0 +1,110 @@
+/* ---------- Global ---------- */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #007bff, #6610f2); /* gradient biru */
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* ---------- Card Container ---------- */
+.container {
+  max-width: 900px; /* lebih lebar untuk dashboard */
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ---------- Headings ---------- */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ---------- Form Input & Button ---------- */
+form input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.02);
+}
+
+/* ---------- Links ---------- */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover { 
+  text-decoration: underline; 
+}
+
+/* ---------- Flash Messages ---------- */
+.flash {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.flash.success { background: #d4edda; color: #155724; }
+.flash.danger { background: #f8d7da; color: #721c24; }
+.flash.info { background: #d1ecf1; color: #0c5460; }
+
+/* ---------- Table ---------- */
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f5f9;
+}
+
+/* ---------- Buttons Table ---------- */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+/* ---------- Animasi ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
